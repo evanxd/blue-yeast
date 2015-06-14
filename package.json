@@ -1,0 +1,16 @@
+{
+  "name": "bluetooth-helper",
+  "version": "0.0.1",
+  "homepage": "https://github.com/evanxd/bluetooth-helper",
+  "authors": [
+    "Evan Xd <itoyxd@gmail.com>"
+  ],
+  "description": "A wrapper for BLE APIs in FxOS. It help developers handle BLE things easier.",
+  "main": "lib/bluetooth_helper.js",
+  "keywords": [
+    "FxOS",
+    "bluetooth",
+    "ble"
+  ],
+  "license": "Apache License 2.0"
+}
