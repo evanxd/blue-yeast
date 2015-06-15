@@ -8,15 +8,25 @@ A wrapper for BLE APIs in FxOS. It help developers handle BLE things easier.
 4. Done.
 
 ## How to Use
-Send one byte data `EE` to BLE device.
+### Connect the device.
 ```js
 var ble = new BluetoothHelper({
   // Need BLE device's name or address to connect it.
   name: 'BT_NAME',
   // address: 'e4:a9:35:a4:ee:10'
 });
+```
+### Send one byte data `EE` to BLE device.
+```js
 ble.on('connected', function() {
   // You need to send one byte or more data at one time.
   ble.send('EE');
 });
+```
+### Reconnect the device.
+```js
+ble.disconnected();
+ble.on('disconnected', function() {
+  ble.connect();
+})
 ```
