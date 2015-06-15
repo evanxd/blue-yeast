@@ -2,12 +2,10 @@
 A wrapper for BLE APIs in FxOS. It help developers handle BLE things easier.
 
 ## How to Install
-Just declare the library in `<head>` in HTML file and done.
-```html
-<head>
-  <script src="path/to/bluetooth_helper.js"></script>
-</head>
-```
+1. Declare bluetooth-helper as dependency module in `bower.json`. Please check [bower.json](http://bower.io/docs/creating-packages/).
+2. Download the module: `bower install`.
+3. Import the module in `<head>` in HTML file. `html<script src="bower_components/bluetooth-helper/lib/bluetooth_helper.js"></script>`
+4. Done.
 
 ## How to Use
 Send one byte data `EE` to BLE device.
