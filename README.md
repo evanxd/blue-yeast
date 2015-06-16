@@ -17,10 +17,10 @@ var ble = new BluetoothHelper({
 });
 ble.connect();
 ```
-### Send one byte data `EE` to BLE device.
+### Send data to device after connected.
 ```js
 ble.on('connected', function() {
-  // You need to send one byte or more data at one time.
+  // You need to send one byte or more data in HEX format at one time.
   ble.send('EE');
 });
 ```
