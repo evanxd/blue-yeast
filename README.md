@@ -15,6 +15,7 @@ var ble = new BluetoothHelper({
   name: 'BT_NAME',
   // address: 'e4:a9:35:a4:ee:10'
 });
+ble.connect();
 ```
 ### Send one byte data `EE` to BLE device.
 ```js
