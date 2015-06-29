@@ -10,13 +10,9 @@ A wrapper for BLE APIs in FxOS. It help developers handle BLE things easier.
 ## How to Use
 ### Connect the device.
 ```js
-var ble = new BluetoothHelper({
-  // Need BLE device's name or address to connect it.
-  name: 'BT_NAME',
-  // address: 'e4:a9:35:a4:ee:10'
-});
-ble.connect();
+var ble = Bluetooth.addDevice('BT_NAME', 'e4:a9:35:a4:e:10');
 ```
+
 ### Send data to device after connected.
 ```js
 ble.on('connected', function() {
@@ -24,6 +20,15 @@ ble.on('connected', function() {
   ble.send('EE');
 });
 ```
+
+### Subscribe notifications.
+```js
+ble.startNotifications();
+ble.on('data', function(evt) {
+  console.log('data: ' + JSON.stringify(evt));
+});
+```
+
 ### Reconnect the device.
 ```js
 ble.disconnected();
