@@ -8,12 +8,12 @@ A wrapper for BLE APIs in FxOS. It help developers handle BLE things easier.
 4. Done.
 
 ## How to Use
-### Connect the device.
+### Connect Device
 ```js
 var ble = Bluetooth.addDevice('BT_NAME', 'e4:a9:35:a4:e:10');
 ```
 
-### Send data to device after connected.
+### Send Data
 ```js
 ble.on('connected', function() {
   // You need to send one byte or more data in HEX format at one time.
@@ -21,7 +21,7 @@ ble.on('connected', function() {
 });
 ```
 
-### Subscribe notifications.
+### Subscribe Notifications
 ```js
 ble.startNotifications();
 ble.on('data', function(evt) {
@@ -29,7 +29,7 @@ ble.on('data', function(evt) {
 });
 ```
 
-### Reconnect the device.
+### Reconnect Device
 ```js
 ble.disconnected();
 ble.on('disconnected', function() {
