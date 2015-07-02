@@ -36,3 +36,6 @@ ble.on('disconnected', function() {
   ble.connect();
 })
 ```
+
+## Ongoing Work
+* API design and implement: https://gist.github.com/evanxd/e23c805724cda59b8469
