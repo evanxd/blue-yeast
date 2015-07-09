@@ -1,12 +1,12 @@
 {
   "name": "blue-yeast",
-  "version": "0.0.9",
-  "homepage": "https://github.com/evanxd/bluetooth-helper",
+  "version": "0.1.0",
+  "homepage": "https://github.com/evanxd/blue-yeast",
   "authors": [
     "Evan Xd <itoyxd@gmail.com>"
   ],
   "description": "A wrapper for BLE APIs in FxOS. It help developers handle BLE things easier.",
-  "main": "lib/bluetooth_helper.js",
+  "main": "lib/blue_yeast.js",
   "keywords": [
     "FxOS",
     "bluetooth",
