@@ -1,10 +1,16 @@
 # BlueYeast
 A wrapper for BLE APIs in FxOS. It help developers handle BLE things easier.
 
-## How to Install
-1. Declare bluetooth-helper as dependency module in `bower.json`. Please check [bower.json](http://bower.io/docs/creating-packages/).
+## How to Install for FxOS
+1. Declare blue-yeast as dependency module in `bower.json`. Please check [bower.json](http://bower.io/docs/creating-packages/).
 2. Download the module: `bower install`.
-3. Import the module in `<head>` in HTML file. `html<script src="bower_components/bluetooth-helper/lib/bluetooth_helper.js"></script>`
+3. Import the module in `<head>` in HTML file. `html<script src="bower_components/blue-yeast/lib/fxos/blue_yeast.js"></script>`
+4. Done.
+
+## How to Install for node.js
+1. Declare blue-yeast as dependency module in `package.json`. Please check [package.json](https://docs.npmjs.com/files/package.json).
+2. Download the module: `npm install`.
+3. Import the module in your script `var Bluetooth = require('blue-yeast').Bluetooth;`
 4. Done.
 
 ## How to Use
