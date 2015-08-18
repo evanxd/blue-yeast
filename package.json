@@ -1,6 +1,6 @@
 {
   "name": "blue-yeast",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/evanxd/blue-yeast",
   "authors": [
     "Evan Xd <itoyxd@gmail.com>"
@@ -14,6 +14,7 @@
   ],
   "license": "Apache License 2.0",
   "dependencies": {
+    "nobel": "1.0.2",
     "eventemitter2": "0.4.14"
   }
 }
