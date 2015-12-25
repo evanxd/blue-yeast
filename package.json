@@ -1,6 +1,6 @@
 {
   "name": "blue-yeast",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "homepage": "https://github.com/evanxd/blue-yeast",
   "authors": [
     "Evan Xd <itoyxd@gmail.com>"
@@ -14,6 +14,24 @@
   ],
   "license": "Apache License 2.0",
   "dependencies": {
-    "eventemitter2": "0.4.14"
+    "eventemitter2": "0.4.14",
+    "noble": "^1.2.0"
+  },
+  "devDependencies": {
+    "del": "^1.2.0",
+    "firmata": "^0.5.5",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compressor": "^0.1.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jscs-stylish": "^1.1.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-jsonlint": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sloc": "^1.0.4",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "johnny-five": "^0.8.85",
+    "jscs-jsdoc": "^1.1.0"
   }
 }
